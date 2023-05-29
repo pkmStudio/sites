@@ -21,6 +21,6 @@
 * [Sound Burner](https://pkmstudio.github.io/works/2_SoundBurner "Моя вторая работа")
 * [Sketchmaker Blog](https://pkmstudio.github.io/works/3_SketchmakerBlog "Моя первая адаптивная работа")
 * [Lamba](https://pkmstudio.github.io/works/4_Lamba "Сайт посвященный гонкам")
-* [Lamba](https://pkmstudio.github.io/works/4_Lamba "Сайт посвященный гонкам")
+* [NewsSite](https://pkmstudio.github.io/works/5_NewsSite "Сайт посвященный новостям")
 * [MyBlogV2](https://pkmstudio.github.io/works/6_MyBlogV2 "Мой личный блог")
 * [FinKit](https://pkmstudio.github.io/works/7_FinKit "Сайт инвестиционных сервисов")
