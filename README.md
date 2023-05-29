@@ -22,4 +22,4 @@
 * [Sketchmaker Blog](https://pkmstudio.github.io/works/3_SketchmakerBlog "Моя первая адаптивная работа")
 * [Lamba](https://pkmstudio.github.io/works/4_Lamba "Сайт посвященный гонкам")
 * [MyBlogV2](https://pkmstudio.github.io/works/5_MyBlogV2 "Мой личный блог")
-* [Finkit](https://pkmstudio.github.io/works/6_Finkit "Сайт инвестиционных сервисов")
+* [FinKit](https://pkmstudio.github.io/works/6_FinKit "Сайт инвестиционных сервисов")
