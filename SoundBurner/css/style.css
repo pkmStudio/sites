@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2? семья= M+PLUS+1p:wght@300;800 & display=swap");
+
+/* Общие стили для страницы */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*:hover {
+  transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+body {
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 16px;
+  background: white;
+  color: #000;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+h5,
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Шапка */
+
+header {
+  width: 100%;
+  background: #f8f8f8;
+  font-size: 14px;
+  box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
+  padding: 10px 0;
+}
+
+header .all-header {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+/* Стилизуем контейнер с языком */
+header .all-header .lang {
+  text-align: right;
+  width: 100%;
+}
+
+header .all-header .lang a {
+  color: #c4c4c4;
+}
+
+header .all-header .lang a.active,
+header .all-header .lang a:hover {
+  color: #000;
+  border-bottom: 2px solid black;
+}
+
+/* Стилизуем контейнер со всем остальным наполнением шапки */
+header .all-header .header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1125px;
+  margin-top: 20px;
+}
+
+/* Логотип */
+header .all-header .header-main img {
+  height: 44px;
+}
+
+/* Поиск */
+#search {
+  border: 0;
+  background-color: #ececec;
+  width: 360px;
+  height: 44px;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 10px 20px;
+  outline: none;
+}
+
+/* Кнопка загрузки */
+header .all-header .header-main a {
+  color: #000;
+}
+
+header .all-header .header-main a:hover {
+  color: #c4c4c4;
+}
+
+/* Кнопки Войти и Регистрация */
+header .all-header .header-main .ar {
+  display: flex;
+}
+header .all-header .header-main .ar .btn {
+  cursor: pointer;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+}
+
+header .all-header .header-main .ar .btn.auth {
+  width: 86px;
+  height: 40px;
+}
+
+header .all-header .header-main .ar .btn.reg,
+header .all-header .header-main .ar .btn.auth:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+header .all-header .header-main .ar .btn.reg {
+  width: 136px;
+  height: 40px;
+}
+
+header .all-header .header-main .ar .btn.reg:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Основная часть сайта */
+
+main {
+  width: 100%;
+  padding: 0;
+}
+
+main .section {
+  max-width: 1125px;
+  margin: 40px auto;
+}
+
+main .section .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стилизуем заголовок категорий */
+main .section h3 {
+  font-size: 24px;
+}
+
+main .section h3 span {
+  height: 2px;
+  display: inline-block;
+  margin: 7px 15px;
+  width: 40px;
+  background-color: #000;
+}
+
+/* Стилизуем блок с картинкой и подписью */
+main .section .img-block {
+  width: 32%;
+  height: auto;
+  position: relative;
+}
+
+main .section .img-block img {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 8px 16px rgba(99, 99, 99, 0.6);
+}
+
+main .section .img-block .btn-play {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: -15px;
+  top: 156px;
+}
+
+/* Стилизуем Пол */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #111111;
+  min-height: 160px;
+}
+
+footer p {
+  max-width: 1125px;
+  color: #fff;
+  text-align: center;
+}

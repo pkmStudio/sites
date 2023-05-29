@@ -1,0 +1,268 @@
+* {
+  font-size: 16px;
+  font-family: Verdana, Tahoma, serif;
+  color: #333;
+}
+section {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.row {
+  max-width: 960px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+h3 {
+  font-size: 20px;
+  line-height: 36px;
+}
+a {
+  color: #2497e0;
+}
+
+/* Head */
+header {
+  background-color: rgb(231, 231, 231);
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.logo a {
+  font-size: 26px;
+  color: pink;
+  font-weight: bold;
+  font-style: italic;
+  transition: all 0.6s ease-in-out;
+}
+.logo a:hover {
+  color: blueviolet;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav a {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  color: gray;
+  font-weight: bold;
+  transition: all 0.6s ease-in-out;
+}
+.main-nav a:hover,
+.main-nav :first-child {
+  color: #2497e0;
+}
+
+
+
+/* Main */
+
+main {
+  background-color: rgb(253, 253, 253);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+/* Section 1 : preview */
+.preview {
+  margin-top: 0;
+}
+/* heading with buttin */
+.heading {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+.heading h1 span,
+.heading h1 {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.heading h1 {
+  display: block;
+}
+.heading h1 span {
+  font-weight: bold;
+}
+.heading__button {
+  align-self: flex-end;
+  background-color: rgb(253, 253, 253);
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 12px 20px;
+  color: #2497e0;
+  transition: all 0.6s ease;
+}
+.heading__button:hover {
+  color: #2088c9;
+  background-color: rgb(252, 208, 215);
+}
+
+/* Slider */
+.slider {
+  height: 377px;
+  background-image: url(../img/img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-blend-mode: multiply;
+  background-color: rgba(64, 61, 61, 0.4);
+  position: relative;
+  border-radius: 10px;
+}
+.slider .review {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.slider .review h3,
+.slider .review p {
+  color: whitesmoke;
+}
+.slider .review p,
+.slider .review a {
+  font-size: 12px;
+}
+.slider .review a:hover {
+  text-decoration: underline;
+}
+
+/* Section 2 */
+
+.column {
+  display: flex;
+  justify-content: space-between;
+}
+.preview-article {
+  width: 30%;
+}
+.preview-article__name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preview-article__name img {
+  margin-right: 10px;
+}
+
+.preview-article p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.preview-article a {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.preview-article a:hover {
+  text-decoration: underline;
+}
+
+
+/* Section 3 */
+
+.good-projects .heading__button {
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #333;
+  transition: all 0.6s ease;
+}
+.good-projects .heading__button:hover {
+  color: #2088c9;
+  background: none;
+}
+
+.projects-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projects-gallery img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+
+/* footer */
+footer {
+  background-color: black;
+  padding-bottom: 30px;
+}
+footer h3 {
+  font-size: 14px;
+  color: #eee;
+  text-transform: uppercase;
+}
+footer a,
+footer p {
+  text-decoration: none;
+  color: rgb(62, 62, 62);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.categories {
+  display: flex;
+  flex-flow: column;
+  width: 23%;
+}
+.categories a:hover {
+  text-decoration: underline;
+}
+
+.cat-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cat-gallery img {
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.cat-gallery img:hover {
+  cursor: pointer;
+}
+
+@media screen and (width < 881px) {
+  .projects-gallery img {
+    width: 48%;
+  }
+  .projects-gallery img:last-child {
+    display: none;
+  }
+
+  .column {
+    flex-flow: column;
+  }
+  .preview-article {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  footer .column {
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  .categories:not(:last-child, :first-child) {
+    display: none;
+  }
+}
+
+@media screen and (width < 600px) {
+  .logo {
+    display: none;
+  }
+  .main-nav {
+    flex-wrap: wrap;
+  }
+  .main-nav a {
+    margin-bottom: 20px;
+  }
+}

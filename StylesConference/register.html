@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Styles Conference</title>
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap">
+</head>
+<body>
+
+	<!-- Голова сайта с навигацией -->
+
+	<header class="primary-header container group">
+		<h1 class="logo">
+			<a href="index.html">Styles <br> Conference</a>
+		</h1>
+		<h3 class="tagline">Август 24&ndash;26 &mdash; Чикаго, штат Иллинойс</h3>
+		<nav class="nav primary-nav">
+			<ul>
+				<li><a href="index.html">Главная</a></li><!--
+				--><li><a href="speakers.html">Спикеры</a></li><!--
+				--><li><a href="schedule.html">Расписание</a></li><!--
+				--><li><a href="venue.html">Место</a></li><!--
+				--><li><a href="register.html">Регистрация</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Регистрация -->
+
+	<section class="row-alt">
+		<div class="lead container">
+
+			<h1>Регистрация</h1>
+
+			<p>Каждый год мы стремимся невероятно провести время и в этом году
+			мы хотели бы чтобы вы присоединились к нам. Вход на конференцию стоит
+			всего лишь 99$ и это одна из лучших ценностей, которую вы найдете.</p>
+
+		</div>
+	</section>
+
+	<!-- Информационный раздел -->
+
+	<section class="row">
+		<div class="grid"><!--
+
+			Почему вы должны зарегистрироваться
+
+			--><section class="col-2-3">
+
+				<h2>Закажи билет на конференцию</h2>
+				<h5>$99 за билет</h5>
+
+				<p>Приобретите билет на Styles Conference, используя форму справа.
+				Можно приобрести сразу несколько билетов, так что не стесняйтесь взять
+				с собой друга или двух. после того, как ваш заказ будет готов, мы
+				свяжемся с вами и прелоставим квитанцию за покупку. Скоро увидимся!</p>
+
+				<h4>Зачем участвовать?</h4>
+
+				<ul class="why-attend">
+					<li>Более двадцати спикеров мирового класса</li>
+					<li>Один полный день мастер-классов и два полных дня презентаций</li>
+					<li>Состоится в Театре Чикаого, исторической достопремичательности</li>
+					<li>Август в Чикаго просто поражает</li>
+				</ul>
+
+			</section><!--
+
+			Форма регистрации
+
+			--><form class="col-1-3" action="#" method="post">
+
+				<fieldset class="register-group">
+
+					<label>
+						Имя
+						<input type="text" name="name" placeholder="Полное имя" required>
+					</label>
+
+					<label>
+						Email
+						<input type="email" name="email" placeholder="Адрес почты" required>
+					</label>
+
+					<label>
+						Число билетов
+						<select name="quantity" required>
+							<option value="1" selected>1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</label>
+
+					<label>
+						Коментарии
+						<textarea name="comments" placeholder="Напишите свои пожелания"></textarea>
+					</label>
+
+				</fieldset>
+
+				<input class="btn btn-default" type="submit" name="submit" value="Заказать">
+
+			</form>
+
+		</div>
+	</section>
+
+	<!-- Подвал сайта -->
+
+	<footer class="primary-footer container group">
+		<small>&copy; Styles Conference</small>
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html">Главная</a></li><!--
+				--><li><a href="speakers.html">Спикеры</a></li><!--
+				--><li><a href="schedule.html">Расписание</a></li><!--
+				--><li><a href="venue.html">Место</a></li><!--
+				--><li><a href="register.html">Регистрация</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>
