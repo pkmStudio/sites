@@ -1,6 +1,6 @@
 
 
-# Sound Burner (HTML + CSS + FlexBox)
+# Sound Burner (HTML + CSS)
 
 
 
