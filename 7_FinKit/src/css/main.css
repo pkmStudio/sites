@@ -338,7 +338,7 @@ h6 {
 }
 @media (max-width: 540px) {
   .main_screen__image {
-    width: 120%;
+    width: 100%;
   }
 }
 .main_screen__image img {
