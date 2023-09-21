@@ -675,7 +675,12 @@ body._sending::after {
   width: 100%;
   z-index: 5;
   background-color: #7D1D50;
-  position: relative;
+  position: fixed;
+}
+@media (max-width: 1309px) {
+  .header {
+    position: relative;
+  }
 }
 .header__container {
   min-height: 100px;
@@ -748,8 +753,10 @@ body._sending::after {
     top: 100%;
     right: -100%;
     width: 100%;
+    min-height: 90vh;
     padding: 50px;
     transition: right 0.5s ease;
+    overflow: auto;
     overflow-y: visible;
   }
 }
