@@ -29,3 +29,4 @@
 * [NewsSite](https://pkmstudio.github.io/works/5_NewsSite "Сайт посвященный новостям")
 * [MyBlogV2](https://pkmstudio.github.io/works/6_MyBlogV2 "Мой личный блог")
 * [FinKit](https://pkmstudio.github.io/works/7_FinKit "Сайт инвестиционных сервисов")
+* [MetaphorSchool](https://pkmstudio.github.io/works/8_MetaphorSchool "Сайт детской школы")
