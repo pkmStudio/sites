@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- тип документа и кодировка. как обработать -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- область просмотра - мобильная отзывчивость. Физическая ширина устройства(отл для мобил), макс. масштаб, масштабируется пользователем -->
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+	/>
+	<meta name="author" content="pkmStudio Ed" />
+	<!-- описание(150 символов). для поисковых систем - сниппет поисковой выдачи. Также SEO. -->
+	<meta name="description" content="Описание" />
+	<!-- для поисковых систем. указания ключевых слов на странице -->
+	<meta name="keywords" content="Ключевые слова" />
+	<!-- для поисковых роботов. индексировать страницы, отношения к ссылкам на странице(проиндексирована, перейти по ссылкам) -->
+	<meta name="robots" content="index,follow" />
+	<!-- иконка -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<!-- подключение стилей CSS -->
+	
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230919151600"
+	/>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230919151600" />
+	<!-- названия страницы. для поисковых систем. названия закладки -->
+	<title>Главная</title>
+</head>
+
+<body>
+   <div class="wrapper">
+            <header class="header">
+	<div class="header__container">
+		<div class="header__body">
+
+			<div class="header__logo">
+				<img class="header__logo-img" src="img/svg/logo.svg" alt="Metaphor">
+				<p class="header__logo-text">Metaphor</p>
+			</div>
+
+			<div class="header__menu menu">
+				<!-- Меню Бургер -->
+				<button class="menu__icon icon-menu" type="button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<!-- Навигация меню -->
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<p class="menu__link">Our School <i class="icon-chevron-down"></i></p>
+							<div class="menu__sub-list sub-list-mega">
+								<div class="sub-list-mega__content">
+									<div class="sub-list-mega__column sub-list">
+										<h3 class="sub-list__title">School</h3>
+										<ul class="sub-list__list">
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">About Us</a></li>
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">Faculty</a></li>
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">Partners</a></li>
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">Achievments</a></li>								
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">Media About Us</a></li>
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">Useful Links</a></li>
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">Articles</a></li>
+											<li class="sub-list__item"><a class="sub-list__link" target="_blank" href="">Contact</a></li>
+										</ul>
+									</div>
+
+									<div class="sub-list-mega__column support">
+										<h3 class="support__title">Faculty</h3>
+										<p class="support__quote">If the teacher combines love for work and for students, he is a perfect teacher.</p>
+										
+										<div class="support__gallery support-grid">
+											<div class="support__item support-grid__div1"><p class="support__main-text">15</p>
+												<p class="support__text">Subjects</p>
+											</div>
+											<div class="support__sub-image support-grid__div2 ">
+												<picture><source srcset="img/header/teacher1.webp" type="image/webp"><img class="_img" src="img/header/teacher1.png" alt="Teacher"></picture>
+											</div>
+											<div class="support__main-image support-grid__div3 ">
+												<picture><source srcset="img/header/teacher2.webp" type="image/webp"><img class="_img" src="img/header/teacher2.png" alt="Teacher"></picture>
+											</div>
+											<div class="support__sub-image support-grid__div4">
+												<picture><source srcset="img/header/teacher3.webp" type="image/webp"><img class="_img" src="img/header/teacher3.png" alt="Teacher"></picture>
+											</div>
+											<div class="support__item support__item--violet support-grid__div5">
+												<p class="support__main-text">50+</p>
+												<p class="support__text">Teachers</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="sub-list-mega__column features">
+										<h3 class="features__title">Achievments</h3>
+										<div class="features__image">
+											<picture><source srcset="img/header/achievments.webp" type="image/webp"><img class="_img" src="img/header/achievments.png" alt="Math Certification"></picture>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</li>
+
+						<li class="menu__item"><a class="menu__link" target="_blank" href="">Academics</a></li>
+						<li class="menu__item"><a class="menu__link" target="_blank" href="">Studios</a></li>
+						<li class="menu__item"><a class="menu__link" target="_blank" href="">Online</a></li>
+
+						<li class="menu__item dropdown-standart">
+							<p class="menu__link">Camps <i class="icon-chevron-down"></i></p>
+							<div class="menu__sub-list sub-list-standart">
+								<ul class="menu__sub-list-content">
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Winter</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Spring</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Summer</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Neture Discovery</a></li>								
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Growing Social</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu__item dropdown-standart">
+							<p class="menu__link">Testing <i class="icon-chevron-down"></i></p>
+							<div class="menu__sub-list sub-list-standart">
+								<ul class="menu__sub-list-content">
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">NEWL/AP Russian Exam</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">TORFL</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Russian Citizenship Exam</a></li>						
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Pushkin Institute <br> Certification/Adults</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Pushkin Institute <br> Certification/Children</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">World Languages</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu__item dropdown-standart">
+							<p class="menu__link">Contents <i class="icon-chevron-down"></i></p>
+							<div class="menu__sub-list sub-list-standart">
+								<ul class="menu__sub-list-content">
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Math Kangaroo</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Russian Medvezhonok</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Living Classics</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Totalny Dictant</a></li>								
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Spoken Olympiada</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu__item dropdown-standart">
+							<p class="menu__link">Gallery <i class="icon-chevron-down"></i></p>
+							<div class="menu__sub-list sub-list-standart">
+								<ul class="menu__sub-list-content">
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Photo</a></li>
+									<li class="menu__sub-item"><a class="menu__sub-link" target="_blank" href="">Video</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu__item"><a class="menu__link" target="_blank" href="">Calendar</a></li>
+
+						<li class="menu__item">
+							<!-- <a class="menu__link" target="_blank" href=""><i class="icon-search"></i></a> -->
+							<!-- <div class="btn-close-menu"><i class="icon-cross"></i></div> -->
+
+							<form  class="top-search-form">
+								<input class="top-search-form__input" type="text" placeholder="Search product here...">
+								<button class="top-search-form__button" type="button">
+									<i class="icon-search"></i>
+								</button>
+							</form>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+            <main class="page">
+               <div class="main">
+                  <section class="promo">
+                     <video class="promo__video" autoplay muted loop preload="auto" poster="img/promo/promo.png" >
+                        <source type="video/mp4" src="img/video/video.mp4">
+                     </video>
+                  </section>
+
+                  <section class="academics _container">
+                     <div class="academics__background-text background-text">
+                        <p class="academics__background-item">metaphor</p>
+                        <p class="academics__background-item">school</p>
+                     </div>
+                     
+                     <div class="academics__container">
+                        <h3 class="academics__title _title">Academics</h3>
+                        <p class="academics__text _text">Metaphor engages the natural enthusiasm, energy, and curiosity of adolescence with a curriculum that is challenging yet exciting. <br><br>Our program is based on an integrated, interactive, innovative approach.</p>
+                        <p class="academics__sub-text _small-text">Drawing and creativity is the best way to develop cognitive abilities and fine motor skills, including hand and finger. <br><br>Croordination, which prepares the child for writing letters in the future.</p>
+                     </div>
+
+                     <!-- Slider main container -->
+                     <div class="slider">
+                        <div dir="rtl" class="swiper slider__container academics-slider">
+                           <!-- Additional required wrapper -->
+                           <div class="swiper-wrapper slider-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/academics-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/academics-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">20 years</div>
+                                 <h4 class="slider__title">Kindergarten some one Что то там</h4>
+                              </div>
+   
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/academics-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/academics-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__content">
+                                    <p class="slider__item">18 years</p>
+                                    <h4 class="slider__title">Kindergarten</h4>
+                                 </div>
+                              </div>
+   
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/academics-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/academics-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">16 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+   
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/academics-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/academics-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">12 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+   
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/academics-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/academics-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">8 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+   
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/academics-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/academics-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">6 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+   
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/academics-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/academics-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">4 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+   
+                           </div>
+                        </div>
+                        <div class="slider-button icon-chevron-down academics-slider__button">
+                        </div>
+                     </div>
+                  </section>
+
+                  <section class="photo-session">
+                     <div class="photo-session__container _container">
+                        <div class="photo-session__content">
+                           <div class="photo-session__img">
+                              <picture><source srcset="img/i-p-s/main-photo.webp" type="image/webp"><img class="_img" src="img/i-p-s/main-photo.png" alt="children in the garden"></picture>
+                           </div>
+
+                           <div class="photo-session__text-content">
+                              <h3 class="photo-session__title">School News</h3>
+                              <p class="photo-session__text _title">Individual Photo Session</p>
+                              <p class="photo-session__sub-text">We are happy to invite students of 6 to 9 years of age to join our Spring Camp 2022: Monday, April 3; Tuesday, April 4; Wednesday, April 5.</p>
+                           </div>
+                        </div>
+   
+                        <!-- Slider main container -->
+                        <div class="photo-slider">
+                           <div class="photo-slider__body">
+                              <div dir="rtl" class="swiper photo-slider__container">
+                                 <!-- Additional required wrapper -->
+                                 <div class="swiper-wrapper photo-slider-wrapper">
+                                    <!-- Slides -->
+      
+                                    <div class="swiper-slide photo-slider__slide">
+                                       <div>
+                                          <picture><source srcset="img/i-p-s/spring-camp.webp" type="image/webp"><img class="_img" src="img/i-p-s/spring-camp.png" alt=""></picture>
+                                       </div>
+                                       <div class="photo-slider__content">
+                                          <h4 class="photo-slider__title">School News</h4>
+                                          <p class="photo-slider__text">One Horizons at Metaphor</p>
+                                       </div>
+                                    </div>
+      
+                                    <div class="swiper-slide photo-slider__slide">
+                                       <div>
+                                          <picture><source srcset="img/i-p-s/spring-camp.webp" type="image/webp"><img class="_img" src="img/i-p-s/spring-camp.png" alt=""></picture>
+                                       </div>
+                                       <div class="photo-slider__content">
+                                          <h4 class="photo-slider__title">School News</h4>
+                                          <p class="photo-slider__text">One Horizons at Metaphor</p>
+                                       </div>
+                                    </div>
+      
+                                    <div class="swiper-slide photo-slider__slide">
+                                       <div>
+                                          <picture><source srcset="img/i-p-s/spring-camp.webp" type="image/webp"><img class="_img" src="img/i-p-s/spring-camp.png" alt=""></picture>
+                                       </div>
+                                       <div class="photo-slider__content">
+                                          <h4 class="photo-slider__title">School News</h4>
+                                          <p class="photo-slider__text">One Horizons at Metaphor</p>
+                                       </div>
+                                    </div>
+      
+                                    <div class="swiper-slide photo-slider__slide">
+                                       <div>
+                                          <picture><source srcset="img/i-p-s/spring-camp.webp" type="image/webp"><img class="_img" src="img/i-p-s/spring-camp.png" alt=""></picture>
+                                       </div>
+                                       <div class="photo-slider__content">
+                                          <h4 class="photo-slider__title">School News</h4>
+                                          <p class="photo-slider__text">One Horizons at Metaphor</p>
+                                       </div>
+                                    </div>
+      
+                                    <div class="swiper-slide photo-slider__slide">
+                                       <div>
+                                          <picture><source srcset="img/i-p-s/spring-camp.webp" type="image/webp"><img class="_img" src="img/i-p-s/spring-camp.png" alt=""></picture>
+                                       </div>
+                                       <div class="photo-slider__content">
+                                          <h4 class="photo-slider__title">School News</h4>
+                                          <p class="photo-slider__text">One Horizons at Metaphor</p>
+                                       </div>
+                                    </div>
+      
+                                    <div class="swiper-slide photo-slider__slide">
+                                       <div>
+                                          <picture><source srcset="img/i-p-s/spring-camp.webp" type="image/webp"><img class="_img" src="img/i-p-s/spring-camp.png" alt=""></picture>
+                                       </div>
+                                       <div class="photo-slider__content">
+                                          <h4 class="photo-slider__title">School News</h4>
+                                          <p class="photo-slider__text">One Horizons at Metaphor</p>
+                                       </div>
+                                    </div>
+      
+                                    <div class="swiper-slide photo-slider__slide">
+                                       <div>
+                                          <picture><source srcset="img/i-p-s/spring-camp.webp" type="image/webp"><img class="_img" src="img/i-p-s/spring-camp.png" alt=""></picture>
+                                       </div>
+                                       <div class="photo-slider__content">
+                                          <h4 class="photo-slider__title">School News</h4>
+                                          <p class="photo-slider__text">One Horizons at Metaphor</p>
+                                       </div>
+                                    </div>
+      
+                                 </div>
+                              </div>
+                              <div class="photo-slider__button slider-button icon-chevron-down"></div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </section>
+
+                  <section class="studios _container">
+                     <div class="studios__background-text background-text">
+                        <p class="studios__background-item">studios</p>
+                     </div>
+                     
+                     <div class="studios__container">
+                        <h3 class="studios__title _title">Studios</h3>
+                        <p class="studios__text _text">We are convinced that a creative approach to the process of learning and its emotional interpretation assure the most natural and organic conditions for mastering knowledge for children of different age groups and adults.</p>
+                        <p class="studios__sub-text _small-text">We are happy to invite students of 6 to 9 years of age to join our Spring Camp 2022: Monday, April 3; Tuesday, April 4; Wednesday, April 5.</p>
+                     </div>
+                  
+                     <!-- Slider main container -->
+                     <div class="slider">
+                        <div dir="rtl" class="swiper slider__container studio-slider">
+                           <!-- Additional required wrapper -->
+                           <div class="swiper-wrapper slider-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/studios-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/studios-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">20 years</div>
+                                 <h4 class="slider__title">Kindergarten some one Что то там</h4>
+                              </div>
+                  
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/studios-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/studios-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__content">
+                                    <p class="slider__item">18 years</p>
+                                    <h4 class="slider__title">Kindergarten</h4>
+                                 </div>
+                              </div>
+                  
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/studios-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/studios-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">16 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+                  
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/studios-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/studios-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">12 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+                  
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/studios-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/studios-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">8 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+                  
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/studios-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/studios-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">6 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+                  
+                              <div class="swiper-slide slider__slide">
+                                 <div>
+                                    <picture><source srcset="img/studios-slider/kindergarten.webp" type="image/webp"><img class="_img" src="img/studios-slider/kindergarten.png" alt=""></picture>
+                                 </div>
+                                 <div class="slider__item">4 years</div>
+                                 <h4 class="slider__title">Kindergarten</h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="slider-button icon-chevron-down studio-slider__button"></div>
+                     </div>
+                  </section>
+
+                  <section class="results _container">
+                     <div class="results__img">
+                        <picture><source srcset="img/results/main-photo.webp" type="image/webp"><img class="_img" src="img/results/main-photo.png" alt="Children in the garden"></picture>
+                     </div>
+                     
+                     <div class="results__text-content">
+                        <div class="results__main-info main-info">
+                           <p class="main-info__big-text _title">650</p>
+                           <h3 class="results__title">Results</h3>
+                           <p class="main-info__text">Students learning together in one, intentional community</p>
+                           <p class="main-info__sub-text">Going Far, Going Together</p>
+                        </div>
+
+                        <div class="results__sub-info sub-info">
+                           <div class="sub-info__block">
+                              <p class="sub-info__title">125</p>
+                              <p class="sub-info__text">Courses offered in the upper school curriculum and through MSON</p>
+                           </div>
+
+                           <div class="sub-info__block">
+                              <p class="sub-info__title">149</p>
+                              <p class="sub-info__text">Co- and extracurricular activities across divisions</p>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+
+                  <section class="facts _container">
+                     <div class="facts__content">
+                        <div class="facts__text-content">
+                           <h3 class="facts__title">Fast Facts</h3>
+                           <p class="facts__text">Our Values!</p>
+                           <p class="facts__sub-text">We strive to motivate our students to explore and grow both academically and socially.</p>
+   
+                           <ul class="facts__list">
+                              <li>Silent Reflection</li>
+                              <li>Equity, Justice, and Community</li>
+                              <li>Global Citizenship</li>
+                           </ul>
+                        </div>
+   
+                        <div class="facts__images">
+                           <div class="facts__img">
+                              <picture><source srcset="img/facts/photo-1.webp" type="image/webp"><img class="_img" src="img/facts/photo-1.png" alt="some"></picture>
+                           </div>
+                           <div class="facts__img">
+                              <picture><source srcset="img/facts/photo-2.webp" type="image/webp"><img class="_img" src="img/facts/photo-2.png" alt="some"></picture>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  
+                  <section class="teacher _container">
+                     <div class="teacher__content">
+                        <div class="teacher__info">
+                           <div class="teacher__img">
+                              <picture><source srcset="img/teacher/teacher.webp" type="image/webp"><img class="_img" src="img/teacher/teacher.png" alt="teacher"></picture>
+                           </div>
+
+                           <div class="teacher__block">
+                              <p class="teacher__name">Zhanna Buzova</p>
+                              <p class="teacher__position">Principal, Founder</p>
+                           </div>
+                        </div>
+
+                        <div class="teacher__text-content">
+                           <p class="teacher__text">“If the teacher combines love for work and for students, he is a perfect teacher. We are convinced that a creative approach to the process of learning and its emotional interpretation assure the most natural and organic conditions for mastering knowledge for children of different age groups and adults.”</p>
+                           <p class="teacher__sub-text">“We strive to motivate our students to explore and grow both academically and socially, to develop fundamental skills and essential knowledge for living and working in a multicultural and globalized world.”</p>
+                        </div>
+                     </div>
+
+                     <button class="teacher__button">
+                        <img class="_img" src="img/svg/arrow-narrow-down.svg" alt="">
+                     </button>
+                  </section>
+
+                  <section class="study">
+                     <div class="study__container _container">
+                        <div class="study__text-content">
+                           <p class="study__text">Explore the Community</p>
+                           <button class="study__button">Learn More</button>
+                        </div>
+                        <div class="study__img">
+                           <picture><source srcset="img/study/study.webp" type="image/webp"><img class="_img" src="img/study/study.png" alt=""></picture>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </main>
+            <footer class="footer">
+	<div class="footer__container">
+		<div class="_container">
+
+			<div class="footer__logo">
+				<img class="footer__logo-img" src="img/svg/logo.svg" alt="Metaphor">
+				<p class="footer__logo-text">Metaphor</p>
+			</div>
+	
+			<div class="footer__content">
+				<div class="footer__info">
+					<div class="footer__address">
+						<a href="https://www.google.com/maps/place/Metaphor+International+School/@38.8685124,-77.1854952,15z/data=!4m6!3m5!1s0x89b7b4aefd55460f:0x84f536297474ea4e!8m2!3d38.8685124!4d-77.1854952!16s%2Fg%2F12619816z?entry=ttu" target="_blank">7000 Arlington Blvd Falls Church VA 22042</a>
+					</div>
+					<div class="footer__address">
+					<a href="https://www.google.com/maps/place/6936+Regent+Ln,+Falls+Church,+VA+22042,+%D0%A1%D0%A8%D0%90/@38.8657929,-77.186506,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7b4a9251b6cd1:0x2e543be917f0e6d2!8m2!3d38.8657929!4d-77.186506!16s%2Fg%2F11c17frv9g?entry=ttu" target="_blank">6936 Regent Lane Falls Church VA 22042</a>
+					</div>
+					<div class="footer__contacts">
+						<a href=”tel:+17039927770”>Office: (703) 992-7770</a>
+						<a href=”tel:+12024922282”>Direct: (202) 492-2282</a>
+					</div>
+				</div>
+				
+				<div class="footer__links">
+					<div class="footer__rules-links">
+						<a href="" target="_blank">Emergencies</a>
+						<a href="" target="_blank">Privacy</a>
+					</div>
+					
+					<div class="footer__social-links">
+						<a href="" target="_blank"><i class="icon-twitter"></i></a>
+						<a href="" target="_blank"><i class="icon-instagram"></i></a>
+						<a href="" target="_blank"><i class="icon-facebook"></i></a>
+						<a href="" target="_blank"><i class="icon-youtube"></i></a>
+						<a href="" target="_blank"><i class="icon-github"></i></a>
+					</div>
+				</div>
+			</div>
+	
+			<p class="footer__open-company">© 2017 Metaphor. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+
+   </div>
+   <script src="js/app.min.js?_v=20230919151600"></script>
+</body>
+</html>
