@@ -18,9 +18,9 @@
 	
 	<link
 		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230926020937"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231001213455"
 	/>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230926020937" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231001213455" />
 	<!-- названия страницы. для поисковых систем. названия закладки -->
 	<title>Главная</title>
 </head>
@@ -131,7 +131,7 @@
                   <video class="promo__video" autoplay muted loop preload="auto" poster="img/promo/promo.png" >
                      <source type="video/webm" src="img/promo/promo.webm">
                   </video>
-                  <div class="promo__text-content _container">
+                  <div class="promo__text-content">
                      <p class="promo__text _small-text">Future Your  Life</p>
                      <h2 class="promo__title _title">Metaphor International School</h2>
                      <p class="promo__sub-text _text">
@@ -459,7 +459,8 @@
                   </div>
                </section>
 
-               <section class="results _container">
+               <section class="results">
+               <div class="results__container _container">
                   <div class="results__img">
                      <picture><source srcset="img/results/main-photo.webp" type="image/webp"><img class="_img" src="img/results/main-photo.png" alt="Children in the garden"></picture>
                   </div>
@@ -484,6 +485,7 @@
                         </div>
                      </div>
                   </div>
+               </div>
                </section>
 
                <section class="facts _container">
@@ -511,25 +513,74 @@
                   </div>
                </section>
                
-               <section class="teacher _container">
-                  <div class="teacher__content">
-                     <div class="teacher__info">
-                        <div class="teacher__img">
-                           <picture><source srcset="img/teacher/teacher.webp" type="image/webp"><img class="_img" src="img/teacher/teacher.png" alt="teacher"></picture>
+               <!-- Исправления по фону -->
+               <section class="teacher teacher_bggray">
+                  <div class="teacher__container _container">
+                     <div class="teacher__content">
+                        <div class="teacher__info">
+                           <div class="teacher__img">
+                              <picture><source srcset="img/teacher/teacher.webp" type="image/webp"><img class="_img" src="img/teacher/teacher.png" alt="teacher"></picture>
+                           </div>
+   
+                           <div class="teacher__block teacher__block_white">
+                              <p class="teacher__name">Zhanna Buzova</p>
+                              <p class="teacher__position">Principal, Founder</p>
+                           </div>
                         </div>
-
-                        <div class="teacher__block">
-                           <p class="teacher__name">Zhanna Buzova</p>
-                           <p class="teacher__position">Principal, Founder</p>
+   
+                        <div class="teacher__text-content">
+                           <p class="teacher__text">“If the teacher combines love for work and for students, he is a perfect teacher. We are convinced that a creative approach to the process of learning and its emotional interpretation assure the most natural and organic conditions for mastering knowledge for children of different age groups and adults.”</p>
+                           <p class="teacher__sub-text">“We strive to motivate our students to explore and grow both academically and socially, to develop fundamental skills and essential knowledge for living and working in a multicultural and globalized world.”</p>
                         </div>
-                     </div>
-
-                     <div class="teacher__text-content">
-                        <p class="teacher__text">“If the teacher combines love for work and for students, he is a perfect teacher. We are convinced that a creative approach to the process of learning and its emotional interpretation assure the most natural and organic conditions for mastering knowledge for children of different age groups and adults.”</p>
-                        <p class="teacher__sub-text">“We strive to motivate our students to explore and grow both academically and socially, to develop fundamental skills and essential knowledge for living and working in a multicultural and globalized world.”</p>
                      </div>
                   </div>
                </section>
+
+
+               <section class="teacher">
+                  <div class="teacher__container _container">
+                     <div class="teacher__contentv2">
+                        <div class="teacher__info">
+                           <div class="teacher__img">
+                              <picture><source srcset="img/teacher/teacher.webp" type="image/webp"><img class="_img" src="img/teacher/teacher.png" alt="teacher"></picture>
+                           </div>
+   
+                           <div class="teacher__block">
+                              <p class="teacher__name">Zhanna Buzova</p>
+                              <p class="teacher__position">Principal, Founder</p>
+                           </div>
+                        </div>
+   
+                        <div class="teacher__text-content">
+                           <p class="teacher__text">“If the teacher combines love for work and for students, he is a perfect teacher. We are convinced that a creative approach to the process of learning and its emotional interpretation assure the most natural and organic conditions for mastering knowledge for children of different age groups and adults.”</p>
+                           <p class="teacher__sub-text">“We strive to motivate our students to explore and grow both academically and socially, to develop fundamental skills and essential knowledge for living and working in a multicultural and globalized world.”</p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+
+               <section class="teacher">
+                  <div class="teacher__container _container">
+                     <div class="teacher__content">
+                        <div class="teacher__info">
+                           <div class="teacher__img">
+                              <picture><source srcset="img/teacher/teacher.webp" type="image/webp"><img class="_img" src="img/teacher/teacher.png" alt="teacher"></picture>
+                           </div>
+   
+                           <div class="teacher__block">
+                              <p class="teacher__name">Zhanna Buzova</p>
+                              <p class="teacher__position">Principal, Founder</p>
+                           </div>
+                        </div>
+   
+                        <div class="teacher__text-contentv2">
+                           <p class="teacher__text">“If the teacher combines love for work and for students, he is a perfect teacher. We are convinced that a creative approach to the process of learning and its emotional interpretation assure the most natural and organic conditions for mastering knowledge for children of different age groups and adults.”</p>
+                           <p class="teacher__sub-text">“We strive to motivate our students to explore and grow both academically and socially, to develop fundamental skills and essential knowledge for living and working in a multicultural and globalized world.”</p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+
 
                <!-- <section class="study">
                   <div class="study__container _container">
@@ -588,6 +639,6 @@
 </footer>
 
    </div>
-   <script src="js/app.min.js?_v=20230926020937"></script>
+   <script src="js/app.min.js?_v=20231001213455"></script>
 </body>
 </html>
