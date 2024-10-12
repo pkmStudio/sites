@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic$display=swap);
+/*
+Стили отображения
+*/
+body { 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* 
+Стили Лавки
+*/
+.shelfs_of_store  {
+    /*Формула динамического расчета ширины, зависимой от высоты экрана
+        Пропорции лавки 431.35/211.37 = 2.04
+    */
+    width: calc(100vh*0.8/2.04);
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.shelf_of_store {
+    width: calc(100vh*0.8/2.04);
+    height: 17.24%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.shelf_of_store--first {
+    position: absolute;
+    top: 12%;
+}
+
+.shelf_of_store--second {
+    position: absolute;
+    top: 35.5%;
+}
+
+.shelf_of_store--third {
+    position: absolute;
+    top: 56%;
+}
+
+._touch .product._active {
+    position: absolute;
+}
+/*
+Стили Корзинки
+*/
+.cart_of_store {
+    /* background: no-repeat center/contain url('svg/cart.svg'); */
+    height: 38.8%;
+    width: calc(100vh*0.46);
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.cart_of_store img {
+    width: 100%;
+}
+
+/*
+Стили Кнопки
+*/
+.button {
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
+
+    padding: 1.125em 0.75em;
+    border-radius: 16px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    background: #FCE000; 
+
+    display: none;
+}
+
+@media (min-width: 320px){
+    .button {
+        font-size: calc(16px + 20 *
+        (100vw - 320px) / (1320 - 320));
+    }
+}
+
+/* Динамическое изменение размера продуктов относительно ширины лавки */
+#cheese,
+#wine,
+#milk {
+    width: calc(100vh*0.8/11.6);
+}
+
+#jam {
+    width: calc(100vh*0.8/9.37);
+
+}
+
+#meet,
+#chiken {
+    width: calc(100vh*0.8/8.62);
+}
+
+#chips {
+    width: calc(100vh*0.8/5.67);
+}
+
+#pineapple {
+    width: calc(100vh*0.8/12.31);
+}
+
+#banans {
+    width: calc(100vh*0.8/9.17);
+}
+
+#apple {
+    width: calc(100vh*0.8/13.9);
+}
+
+#salat {
+    width: calc(100vh*0.8/6.99);
+}
+
+/*
+Стили для Drag and Drop
+*/
+.cart {
+    min-height: 38.8%;
+    width: calc(100vh*0.3);
+    position: absolute;
+    bottom: 21%;
+    left: 24%;
+    z-index: -1;
+
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+
+.button._active {
+    display: block;
+}
+
+.shelfs_of_store._close .shelf_of_store {
+    display: none;
+}
+
+.cart_of_store._active .cart {
+    background-color: rgba(0, 128, 0, 0.298);
+}
